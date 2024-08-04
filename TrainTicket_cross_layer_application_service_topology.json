@@ -1,0 +1,3945 @@
+{"ServiceTopology":[
+{
+    "name": "rabbitmq",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "rabbitmq"
+            ],
+            "pod_name": "rabbitmq-7996f595cc-m8r9z",
+            "pod_ip": "10.244.0.5",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster/tcluster.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.188",
+                        "mac_address": "52:54:00:5f:e9:2f",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.202",
+                        "mac_address": "52:54:00:c2:4d:cd",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-admin-basic-info-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-train-service",
+        "ts-station-service",
+        "ts-price-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-admin-basic-info-service"
+            ],
+            "pod_name": "ts-admin-basic-info-service-7bf95b887-9wl4s",
+            "pod_ip": "10.244.1.11",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-admin-order-service",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-admin-order-service"
+            ],
+            "pod_name": "ts-admin-order-service-7f85d764c8-sjkkx",
+            "pod_ip": "10.244.6.7",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m07",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/tcluster-m07.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.36",
+                        "mac_address": "52:54:00:ad:d4:4d",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.76",
+                        "mac_address": "52:54:00:96:72:42",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-admin-route-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-route-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-admin-route-service"
+            ],
+            "pod_name": "ts-admin-route-service-565bb96ff9-dhbsk",
+            "pod_ip": "10.244.2.8",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-admin-travel-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-travel-service",
+        "ts-travel2-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-admin-travel-service"
+            ],
+            "pod_name": "ts-admin-travel-service-7d6978587d-l5tft",
+            "pod_ip": "10.244.2.5",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-admin-user-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-user-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-admin-user-service"
+            ],
+            "pod_name": "ts-admin-user-service-7c9b964d8c-jgrm7",
+            "pod_ip": "10.244.4.6",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-assurance-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-assurance-mongo"
+            ],
+            "pod_name": "ts-assurance-mongo-75d58c4f95-lfggq",
+            "pod_ip": "10.244.3.8",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-assurance-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-assurance-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-assurance-service"
+            ],
+            "pod_name": "ts-assurance-service-56688f766c-2ncz4",
+            "pod_ip": "10.244.4.8",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-auth-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-auth-mongo"
+            ],
+            "pod_name": "ts-auth-mongo-5d4974c78f-r2jqf",
+            "pod_ip": "10.244.1.13",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-auth-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-verification-code-service",
+        "ts-auth-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-auth-service"
+            ],
+            "pod_name": "ts-auth-service-85d85668bd-jhcgx",
+            "pod_ip": "10.244.2.7",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-avatar-service",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-avatar-service"
+            ],
+            "pod_name": "ts-avatar-service-676c64745b-8f6cs",
+            "pod_ip": "10.244.4.2",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-basic-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-train-service",
+        "ts-station-service",
+        "ts-route-service",
+        "ts-price-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-basic-service"
+            ],
+            "pod_name": "ts-basic-service-75f6f4ffb4-54p82",
+            "pod_ip": "10.244.2.11",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-cancel-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-order-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-cancel-service"
+            ],
+            "pod_name": "ts-cancel-service-6567549dd8-r6rjg",
+            "pod_ip": "10.244.3.10",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-config-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-config-mongo"
+            ],
+            "pod_name": "ts-config-mongo-74699d5589-z6ss2",
+            "pod_ip": "10.244.5.2",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m06",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/tcluster-m06.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.152",
+                        "mac_address": "52:54:00:80:d4:68",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.10",
+                        "mac_address": "52:54:00:35:31:f9",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-config-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-config-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-config-service"
+            ],
+            "pod_name": "ts-config-service-5bb5bf9788-489zc",
+            "pod_ip": "10.244.2.10",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-consign-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-consign-mongo"
+            ],
+            "pod_name": "ts-consign-mongo-5479499695-c94qw",
+            "pod_ip": "10.244.3.6",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-consign-price-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-consign-price-mongo"
+            ],
+            "pod_name": "ts-consign-price-mongo-5558b645c5-ccrws",
+            "pod_ip": "10.244.4.7",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-consign-price-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-consign-price-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-consign-price-service"
+            ],
+            "pod_name": "ts-consign-price-service-66674c9999-sn427",
+            "pod_ip": "10.244.1.10",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-consign-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-consign-mongo",
+        "ts-consign-price-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-consign-service"
+            ],
+            "pod_name": "ts-consign-service-7c9c8cb789-tlm77",
+            "pod_ip": "10.244.7.3",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m08",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m08/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m08/tcluster-m08.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.213",
+                        "mac_address": "52:54:00:d6:c6:05",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.8",
+                        "mac_address": "52:54:00:1c:aa:c8",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-contacts-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-contacts-mongo"
+            ],
+            "pod_name": "ts-contacts-mongo-6d68cf5d47-lmxcq",
+            "pod_ip": "10.244.1.16",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-contacts-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-contacts-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-contacts-service"
+            ],
+            "pod_name": "ts-contacts-service-54499b9d85-rtc7k",
+            "pod_ip": "10.244.3.13",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-delivery-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-delivery-mongo"
+            ],
+            "pod_name": "ts-delivery-mongo-5d7d7b5f5c-d92db",
+            "pod_ip": "10.244.1.8",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-delivery-service",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-delivery-service"
+            ],
+            "pod_name": "ts-delivery-service-759958bb7f-6zz8q",
+            "pod_ip": "10.244.4.10",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-execute-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-order-other-service",
+        "ts-order-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-execute-service"
+            ],
+            "pod_name": "ts-execute-service-8658f4bcbc-pfmh7",
+            "pod_ip": "10.244.5.7",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m06",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/tcluster-m06.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.152",
+                        "mac_address": "52:54:00:80:d4:68",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.10",
+                        "mac_address": "52:54:00:35:31:f9",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-food-map-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-food-map-mongo"
+            ],
+            "pod_name": "ts-food-map-mongo-56476c6d55-8xcwr",
+            "pod_ip": "10.244.5.9",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m06",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/tcluster-m06.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.152",
+                        "mac_address": "52:54:00:80:d4:68",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.10",
+                        "mac_address": "52:54:00:35:31:f9",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-food-map-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-food-map-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-food-map-service"
+            ],
+            "pod_name": "ts-food-map-service-867dcdd959-nlp2m",
+            "pod_ip": "10.244.1.7",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-food-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-food-mongo"
+            ],
+            "pod_name": "ts-food-mongo-5699d7bf7-58t9h",
+            "pod_ip": "10.244.4.11",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-food-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-travel-service",
+        "ts-food-map-service",
+        "ts-food-mongo",
+        "ts-station-service",
+        "rabbitmq"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-food-service"
+            ],
+            "pod_name": "ts-food-service-c6979d89-gslhd",
+            "pod_ip": "10.244.4.5",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-inside-payment-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-inside-payment-mongo"
+            ],
+            "pod_name": "ts-inside-payment-mongo-5564f8c86c-qp459",
+            "pod_ip": "10.244.4.9",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-inside-payment-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-inside-payment-mongo",
+        "ts-payment-service",
+        "ts-order-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-inside-payment-service"
+            ],
+            "pod_name": "ts-inside-payment-service-7c95c887c9-jjvmj",
+            "pod_ip": "10.244.5.3",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m06",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/tcluster-m06.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.152",
+                        "mac_address": "52:54:00:80:d4:68",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.10",
+                        "mac_address": "52:54:00:35:31:f9",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-news-service",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-news-service"
+            ],
+            "pod_name": "ts-news-service-75bf857dff-bvdbw",
+            "pod_ip": "10.244.5.6",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m06",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/tcluster-m06.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.152",
+                        "mac_address": "52:54:00:80:d4:68",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.10",
+                        "mac_address": "52:54:00:35:31:f9",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-notification-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-notification-mongo"
+            ],
+            "pod_name": "ts-notification-mongo-5c4f967c8c-zbt76",
+            "pod_ip": "10.244.6.2",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m07",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/tcluster-m07.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.36",
+                        "mac_address": "52:54:00:ad:d4:4d",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.76",
+                        "mac_address": "52:54:00:96:72:42",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-notification-service",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-notification-service"
+            ],
+            "pod_name": "ts-notification-service-7cd5fdcb65-h4pt2",
+            "pod_ip": "10.244.3.3",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-order-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-order-mongo"
+            ],
+            "pod_name": "ts-order-mongo-c94b44b8c-zv2h4",
+            "pod_ip": "10.244.6.5",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m07",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/tcluster-m07.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.36",
+                        "mac_address": "52:54:00:ad:d4:4d",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.76",
+                        "mac_address": "52:54:00:96:72:42",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-order-other-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-order-other-mongo"
+            ],
+            "pod_name": "ts-order-other-mongo-6ccbdb754c-r8p87",
+            "pod_ip": "10.244.6.6",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m07",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/tcluster-m07.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.36",
+                        "mac_address": "52:54:00:ad:d4:4d",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.76",
+                        "mac_address": "52:54:00:96:72:42",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-order-other-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-order-other-mongo",
+        "ts-station-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-order-other-service"
+            ],
+            "pod_name": "ts-order-other-service-78b5658955-ks86s",
+            "pod_ip": "10.244.0.3",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster/tcluster.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.188",
+                        "mac_address": "52:54:00:5f:e9:2f",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.202",
+                        "mac_address": "52:54:00:c2:4d:cd",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-order-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-order-mongo",
+        "ts-station-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-order-service"
+            ],
+            "pod_name": "ts-order-service-864549b57b-5rksv",
+            "pod_ip": "10.244.3.4",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-payment-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-payment-mongo"
+            ],
+            "pod_name": "ts-payment-mongo-6845877d4c-zsdjz",
+            "pod_ip": "10.244.2.12",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-payment-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-payment-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-payment-service"
+            ],
+            "pod_name": "ts-payment-service-5967f7bbb-cqgwh",
+            "pod_ip": "10.244.5.8",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m06",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/tcluster-m06.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.152",
+                        "mac_address": "52:54:00:80:d4:68",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.10",
+                        "mac_address": "52:54:00:35:31:f9",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-preserve-other-service",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-preserve-other-service"
+            ],
+            "pod_name": "ts-preserve-other-service-87fdfc9f6-5vxx4",
+            "pod_ip": "10.244.3.12",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-preserve-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-user-service",
+        "ts-travel-service",
+        "ts-contacts-service",
+        "ts-seat-service",
+        "ts-security-service",
+        "ts-food-service",
+        "ts-order-service",
+        "ts-ticketinfo-service",
+        "ts-station-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-preserve-service"
+            ],
+            "pod_name": "ts-preserve-service-5588db4b57-ptp46",
+            "pod_ip": "10.244.2.14",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-price-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-price-mongo"
+            ],
+            "pod_name": "ts-price-mongo-85bf87bdd7-zflll",
+            "pod_ip": "10.244.1.12",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-price-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-price-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-price-service"
+            ],
+            "pod_name": "ts-price-service-549dc6b689-4rj86",
+            "pod_ip": "10.244.4.12",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-rebook-service",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-rebook-service"
+            ],
+            "pod_name": "ts-rebook-service-b748b4c76-dzpvs",
+            "pod_ip": "10.244.4.4",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-route-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-route-mongo"
+            ],
+            "pod_name": "ts-route-mongo-d8ff4c9dc-9t8qc",
+            "pod_ip": "10.244.1.14",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-route-plan-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-travel-service",
+        "ts-station-service",
+        "ts-route-service",
+        "ts-travel2-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-route-plan-service"
+            ],
+            "pod_name": "ts-route-plan-service-6bd457c55f-qrbt8",
+            "pod_ip": "10.244.3.9",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-route-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-route-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-route-service"
+            ],
+            "pod_name": "ts-route-service-67d6478cfc-nrd5b",
+            "pod_ip": "10.244.1.9",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-seat-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-travel-service",
+        "ts-order-other-service",
+        "ts-config-service",
+        "ts-order-service",
+        "ts-travel2-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-seat-service"
+            ],
+            "pod_name": "ts-seat-service-bb7c6c587-n74kr",
+            "pod_ip": "10.244.0.4",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster/tcluster.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.188",
+                        "mac_address": "52:54:00:5f:e9:2f",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.202",
+                        "mac_address": "52:54:00:c2:4d:cd",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-security-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-security-mongo"
+            ],
+            "pod_name": "ts-security-mongo-665c67ccdf-q2jtf",
+            "pod_ip": "10.244.6.4",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m07",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/tcluster-m07.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.36",
+                        "mac_address": "52:54:00:ad:d4:4d",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.76",
+                        "mac_address": "52:54:00:96:72:42",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-security-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-security-mongo",
+        "ts-order-other-service",
+        "ts-order-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-security-service"
+            ],
+            "pod_name": "ts-security-service-5cc75cf874-7kc8k",
+            "pod_ip": "10.244.5.4",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m06",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/tcluster-m06.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.152",
+                        "mac_address": "52:54:00:80:d4:68",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.10",
+                        "mac_address": "52:54:00:35:31:f9",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-station-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-station-mongo"
+            ],
+            "pod_name": "ts-station-mongo-78b4f8f84c-hntzs",
+            "pod_ip": "10.244.1.5",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-station-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-station-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-station-service"
+            ],
+            "pod_name": "ts-station-service-75466b47b-b7mbs",
+            "pod_ip": "10.244.6.3",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m07",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/tcluster-m07.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.36",
+                        "mac_address": "52:54:00:ad:d4:4d",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.76",
+                        "mac_address": "52:54:00:96:72:42",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-ticket-office-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-ticket-office-mongo"
+            ],
+            "pod_name": "ts-ticket-office-mongo-78c9d55fdc-gtjlp",
+            "pod_ip": "10.244.1.6",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-ticket-office-service",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-ticket-office-service"
+            ],
+            "pod_name": "ts-ticket-office-service-78dfd4ccff-5c86k",
+            "pod_ip": "10.244.2.9",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-ticketinfo-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-basic-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-ticketinfo-service"
+            ],
+            "pod_name": "ts-ticketinfo-service-79c9f49fd8-47bw7",
+            "pod_ip": "10.244.7.2",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m08",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m08/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m08/tcluster-m08.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.213",
+                        "mac_address": "52:54:00:d6:c6:05",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.8",
+                        "mac_address": "52:54:00:1c:aa:c8",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-train-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-train-mongo"
+            ],
+            "pod_name": "ts-train-mongo-685dcc4dc-vnzhv",
+            "pod_ip": "10.244.3.7",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-train-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-train-mongo"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-train-service"
+            ],
+            "pod_name": "ts-train-service-848fc76f4b-2ks4s",
+            "pod_ip": "10.244.1.4",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m02",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m02/tcluster-m02.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.34",
+                        "mac_address": "52:54:00:bb:65:80",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.32",
+                        "mac_address": "52:54:00:69:ea:94",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-travel-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-travel-mongo"
+            ],
+            "pod_name": "ts-travel-mongo-845b4f9b9-c7dgf",
+            "pod_ip": "10.244.6.9",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m07",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/tcluster-m07.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.36",
+                        "mac_address": "52:54:00:ad:d4:4d",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.76",
+                        "mac_address": "52:54:00:96:72:42",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-travel-plan-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-seat-service",
+        "ts-ticketinfo-service",
+        "ts-station-service",
+        "ts-route-plan-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-travel-plan-service"
+            ],
+            "pod_name": "ts-travel-plan-service-7cd8f7cff4-gbtjq",
+            "pod_ip": "10.244.2.6",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-travel-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-train-service",
+        "ts-seat-service",
+        "ts-travel-mongo",
+        "ts-order-service",
+        "ts-ticketinfo-service",
+        "ts-route-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-travel-service"
+            ],
+            "pod_name": "ts-travel-service-86bbd7447d-s9twn",
+            "pod_ip": "10.244.2.13",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-travel2-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-travel2-mongo"
+            ],
+            "pod_name": "ts-travel2-mongo-d98bb9bbc-fdcvv",
+            "pod_ip": "10.244.4.3",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m05",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m05/tcluster-m05.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.99",
+                        "mac_address": "52:54:00:de:3d:32",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.38",
+                        "mac_address": "52:54:00:6a:60:b4",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-travel2-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-train-service",
+        "ts-travel2-mongo",
+        "ts-order-other-service",
+        "ts-seat-service",
+        "ts-ticketinfo-service",
+        "ts-route-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-travel2-service"
+            ],
+            "pod_name": "ts-travel2-service-9dd58cdfb-rm996",
+            "pod_ip": "10.244.2.15",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m03",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m03/tcluster-m03.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.153",
+                        "mac_address": "52:54:00:e0:96:bc",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.195",
+                        "mac_address": "52:54:00:12:ea:04",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-ui-dashboard",
+    "service_type": "service",
+    "interactions": [
+        "ts-admin-user-service",
+        "ts-consign-service",
+        "ts-admin-order-service",
+        "ts-travel-service",
+        "ts-assurance-service",
+        "ts-admin-travel-service",
+        "ts-contacts-service",
+        "ts-voucher-service",
+        "ts-order-other-service",
+        "ts-inside-payment-service",
+        "ts-execute-service",
+        "ts-verification-code-service",
+        "ts-travel-plan-service",
+        "ts-food-service",
+        "ts-cancel-service",
+        "ts-admin-route-service",
+        "ts-preserve-service",
+        "ts-order-service",
+        "ts-travel2-service",
+        "ts-admin-basic-info-service",
+        "ts-auth-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-ui-dashboard"
+            ],
+            "pod_name": "ts-ui-dashboard-65b5d4bf75-lvvsk",
+            "pod_ip": "10.244.3.14",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-user-mongo",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-user-mongo"
+            ],
+            "pod_name": "ts-user-mongo-566db96975-lpfdt",
+            "pod_ip": "10.244.7.4",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m08",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m08/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m08/tcluster-m08.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.213",
+                        "mac_address": "52:54:00:d6:c6:05",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.8",
+                        "mac_address": "52:54:00:1c:aa:c8",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-user-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-user-mongo",
+        "ts-auth-service"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-user-service"
+            ],
+            "pod_name": "ts-user-service-54c7bb7dfc-t5sf9",
+            "pod_ip": "10.244.6.8",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m07",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/tcluster-m07.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.36",
+                        "mac_address": "52:54:00:ad:d4:4d",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.76",
+                        "mac_address": "52:54:00:96:72:42",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-verification-code-service",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-verification-code-service"
+            ],
+            "pod_name": "ts-verification-code-service-788b7c4577-b5cws",
+            "pod_ip": "10.244.6.10",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m07",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m07/tcluster-m07.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.36",
+                        "mac_address": "52:54:00:ad:d4:4d",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.76",
+                        "mac_address": "52:54:00:96:72:42",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-voucher-mysql",
+    "service_type": "service",
+    "interactions": [],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-voucher-mysql"
+            ],
+            "pod_name": "ts-voucher-mysql-847696f9dd-mzfpl",
+            "pod_ip": "10.244.5.5",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m06",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m06/tcluster-m06.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.152",
+                        "mac_address": "52:54:00:80:d4:68",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.10",
+                        "mac_address": "52:54:00:35:31:f9",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+},
+{
+    "name": "ts-voucher-service",
+    "service_type": "service",
+    "interactions": [
+        "ts-voucher-mysql"
+    ],
+    "pods": [
+        {
+            "containers": [
+                "istio-proxy",
+                "ts-voucher-service"
+            ],
+            "pod_name": "ts-voucher-service-5c8fc76574-x6rvl",
+            "pod_ip": "10.244.3.5",
+            "namespace": "default",
+            "node": {
+                "node_name": "tcluster-m04",
+                "vcpus": "2",
+                "max_memory": 4194304,
+                "num_processors": "32",
+                "cpuMap": [
+                    {
+                        "virtual_cpu": "0",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    },
+                    {
+                        "virtual_cpu": "1",
+                        "processor_affinity": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+                    }
+                ],
+                "diskMap": [
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/boot2docker.iso",
+                        "physical_disk": "hdc"
+                    },
+                    {
+                        "virtual_disk": "/home/csl/.minikube/machines/tcluster-m04/tcluster-m04.rawdisk",
+                        "physical_disk": "hda"
+                    }
+                ],
+                "networkMap": [
+                    {
+                        "ip_address": "192.168.50.248",
+                        "mac_address": "52:54:00:9e:10:77",
+                        "network": "mk-tcluster"
+                    },
+                    {
+                        "ip_address": "192.168.122.172",
+                        "mac_address": "52:54:00:48:81:9f",
+                        "network": "default"
+                    }
+                ],
+                "virt_type": "QEMU",
+                "host_ip": "10.112.19.214"
+            }
+        }
+    ]
+}]}

@@ -1,0 +1,3751 @@
+{
+  "timestamp": 1648495637,
+  "duration": 43200,
+  "graphType": "service",
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "ff551921b8b73b3b23ddcd723190cd51",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "kubernetes",
+          "isIdle": true
+        }
+      },
+      {
+        "data": {
+          "id": "f7a04777875a8dc0e6163859becbe575",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "rabbitmq",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "rabbitmq"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "0.55"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "fa0cbf9ace557f11dd2695f6e45b35b9",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-admin-basic-info-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-admin-basic-info-service"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "15e66fbd4451794e996912410a0c6c18",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-admin-order-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-admin-order-service"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "aad4b01a57b21e2853419ab464f7f4bb",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-admin-route-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-admin-route-service"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "503c651d1d44b01ddfa497e15fed3a2f",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-admin-travel-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-admin-travel-service"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "0a30e14ca22faf3b9f35d16f1fd609a4",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-admin-user-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-admin-user-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.91",
+                "httpIn4xx": "0.91"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "49840248b2789d310328f2cb26d49b4c",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-assurance-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-assurance-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "31.96"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "39e30ea4518ef6f87fcd412d349db896",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-assurance-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-assurance-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "31.96"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "86fc71732421bf53c6df3b2f6e01c739",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-auth-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-auth-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "0.63"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "fa53e7923340b1c4530061b99ec77c10",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-auth-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-auth-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "1.38",
+                "httpInNoResponse": "0.08"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "0.63"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "fd08723bed4541b5290cc7ba0f2c9a08",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-avatar-service",
+          "isIdle": true
+        }
+      },
+      {
+        "data": {
+          "id": "9fc02e97b2bbcfe280bfad2659afc230",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-basic-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-basic-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.28",
+                "httpOut": "0.28"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "9c1320b20b8128d03100f168475aed12",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-cancel-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-cancel-service"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "c428a13969084a16e4595831efa9ae18",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-config-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-config-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "32.51"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "a577267fa6f4c3fd5aa4e6092472ab37",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-config-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-config-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.002"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "32.51"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "2b256902974def604697f811ff23b939",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-consign-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-consign-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "0.01"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "668200154fbee1f886f7edc3b703eec2",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-consign-price-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-consign-price-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "31.97"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "928a35494f7fc2bb6d78da33e8609575",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-consign-price-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-consign-price-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "31.97"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "0e0d7173b5b69d25887836c1d9856af3",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-consign-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-consign-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "0.01"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "62b428d99966df38c5cfce1ea1c733eb",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-contacts-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-contacts-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "32.14"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "5874dc18977426fd0fc0fd38f50b47d8",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-contacts-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-contacts-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "32.14"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "419ad243068e1d437886b37764b8a56a",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-delivery-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-delivery-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "31.97"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "099d18acbfc1f206fb242e0acf736631",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-delivery-service",
+          "isIdle": true
+        }
+      },
+      {
+        "data": {
+          "id": "761bbb91a338d7d02e20c0e785c9b9c1",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-execute-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-execute-service"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "3d17aed28f11b1ccfafc8b90b66cef3c",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-food-map-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-food-map-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "31.98"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "7c306b518a5ebbacca25e9f72f66dd23",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-food-map-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-food-map-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "31.98"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "e429b8d268ea624c9d834e8325921655",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-food-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-food-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "31.97"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "99b85a7778afbbd5e61ebcef657c809a",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-food-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-food-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "31.97"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "5260b97ef48f332b908b91dbd2ddba7a",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-inside-payment-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-inside-payment-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "32.05"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "700c267246a25265ec0600955810af79",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-inside-payment-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-inside-payment-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "32.05"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "75d19496bae94246e785f3eef02e3f98",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-news-service",
+          "isIdle": true
+        }
+      },
+      {
+        "data": {
+          "id": "4f6acfc3981387ccf2b652d86fb1de49",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-notification-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-notification-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "31.90"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "42308fdea0f861c2594a90f53980fd76",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-notification-service",
+          "isIdle": true
+        }
+      },
+      {
+        "data": {
+          "id": "46cc5ade0673b5a4f36031293354261a",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-order-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-order-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "34.53"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "0d3996b2ffea01a6fbeefad4fba69c54",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-order-other-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-order-other-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "32.42"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "6fca4dd5a75a664177a546824594aefd",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-order-other-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-order-other-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.001",
+                "httpOut": "0.001"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "32.42"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "d341f4127f0538a3a9ab4a3e5056559f",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-order-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-order-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.002",
+                "httpOut": "0.001"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "34.53"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "757a94fcfc0626245f273a2709a93c09",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-payment-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-payment-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "31.99"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "a490693564e2097095997af388b0f181",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-payment-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-payment-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "31.99"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "0c34555788c3b643323b0e9206ca3718",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-preserve-other-service",
+          "isIdle": true
+        }
+      },
+      {
+        "data": {
+          "id": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-preserve-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-preserve-service"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "2b0eec7414c3cc829471d696cb9bccc9",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-price-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-price-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "32.44"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "fd447fc0d44050a4bc978641ed25e6f0",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-price-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-price-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.001"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "32.44"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "53b8db5ef3df25b5aa5e09abe1519b6f",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-rebook-service",
+          "isIdle": true
+        }
+      },
+      {
+        "data": {
+          "id": "e68da96564b43fe27b6f06683bbd0ba5",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-route-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-route-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "0.30"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "f64b21b92cee38211b7b23cb08110f33",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-route-plan-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-route-plan-service"
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "e68d54e77e5ea87707fbe8955b1642fb",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-route-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-route-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.60",
+                "httpIn5xx": "0.009"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "0.30"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "7cb800cd13d944db1c0ef67a028bd678",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-seat-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-seat-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.002",
+                "httpOut": "0.007"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "67b5b4f5e37cc99c27d67daa4c514150",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-security-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-security-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "31.99"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "8f4c8eed85068126c93b9db269dc42c1",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-security-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-security-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "31.99"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "279a4f095b708e0221f56f41fa563202",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-station-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-station-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "96.96"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "e5eb65b82546076c1416563bde52f001",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-station-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-station-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.28"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "96.96"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "2cfec2bbb347699d60d7e2cc6c48a6c8",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-ticket-office-mongo",
+          "isIdle": true
+        }
+      },
+      {
+        "data": {
+          "id": "75dde2a7a2c7f71be5d0981f6064021a",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-ticket-office-service",
+          "isIdle": true
+        }
+      },
+      {
+        "data": {
+          "id": "de544331c1987021fc7efe75ba08d102",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-ticketinfo-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-ticketinfo-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.28",
+                "httpOut": "0.28"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "fc84122614eb779e1665b360572f5188",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-train-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-train-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "33.81"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "227de096c29fc8804871bd2c3683ff25",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-train-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-train-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.004"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "33.81"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "a2c3ec7506115bf0746be5b0608ad9c6",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-travel-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-travel-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "5.25"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "964c1ff6b766610b13908c7218985f00",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-travel-plan-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-travel-plan-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpOut": "0.002"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "23d5dc514240907a66f434d877a6b5c4",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-travel-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-travel-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "81.69",
+                "httpIn5xx": "0.005",
+                "httpInNoResponse": "0.008",
+                "httpOut": "0.47"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "5.25"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "68df13fbf8ceb6ac374cda9dd7f23594",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-travel2-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-travel2-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "0.57"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "eba8519df9e146c9d32b0b192cc40b3f",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-travel2-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-travel2-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.06",
+                "httpIn5xx": "0.001",
+                "httpInNoResponse": "0.002",
+                "httpOut": "0.41"
+              }
+            },
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "0.57"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-ui-dashboard",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-ui-dashboard"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "167.55",
+                "httpIn3xx": "0.004",
+                "httpIn4xx": "0.94",
+                "httpIn5xx": "0.03",
+                "httpInNoResponse": "0.08",
+                "httpOut": "84.05"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "ef03e0f7b90937a4415dc1726373b9cd",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-user-mongo",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-user-mongo"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "32.06"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "0f277d62bbbbada11cdd01f7255c6561",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-user-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-user-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "32.06"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "81cf8fc2c58c842d4f8df4506bdfbcb6",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-verification-code-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-verification-code-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpIn": "0.001"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "3b36502d3b8db50c7dbcc19f76b3c1a1",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-voucher-mysql",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-voucher-mysql"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpIn": "0.07"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "6271ca56efa08bb4a6c8c5d6dfc7f8e4",
+          "nodeType": "service",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "service": "ts-voucher-service",
+          "destServices": [
+            {
+              "cluster": "Kubernetes",
+              "namespace": "default",
+              "name": "ts-voucher-service"
+            }
+          ],
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "0.07"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "bd36d4c855abb161643a3d6f1318b36b",
+          "nodeType": "workload",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "workload": "ts-delivery-service",
+          "app": "ts-delivery-service",
+          "version": "latest",
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "32.25"
+              }
+            }
+          ],
+          "isRoot": true
+        }
+      },
+      {
+        "data": {
+          "id": "1d10b2e3270c86474a7e8dec215c1f01",
+          "nodeType": "workload",
+          "cluster": "Kubernetes",
+          "namespace": "default",
+          "workload": "ts-notification-service",
+          "app": "ts-notification-service",
+          "version": "latest",
+          "traffic": [
+            {
+              "protocol": "tcp",
+              "rates": {
+                "tcpOut": "32.16"
+              }
+            }
+          ],
+          "isRoot": true
+        }
+      },
+      {
+        "data": {
+          "id": "375ab940b56ae7bcf0f89cb1a7af5d44",
+          "nodeType": "unknown",
+          "cluster": "unknown",
+          "namespace": "unknown",
+          "workload": "unknown",
+          "app": "unknown",
+          "version": "latest",
+          "traffic": [
+            {
+              "protocol": "http",
+              "rates": {
+                "httpOut": "167.55"
+              }
+            }
+          ],
+          "isInaccessible": true,
+          "isRoot": true
+        }
+      }
+    ],
+    "edges": [
+      {
+        "data": {
+          "id": "f1c81aded7396aa232b81e0599521f12",
+          "source": "0a30e14ca22faf3b9f35d16f1fd609a4",
+          "target": "0f277d62bbbbada11cdd01f7255c6561",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "077a9f279d832ee967a9a159a5d8d7d3",
+          "source": "0e0d7173b5b69d25887836c1d9856af3",
+          "target": "2b256902974def604697f811ff23b939",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "0.01"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-consign-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8a29a201161547c10f753c10a87a457c",
+          "source": "0e0d7173b5b69d25887836c1d9856af3",
+          "target": "928a35494f7fc2bb6d78da33e8609575",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "4b956d134e82d59c2d8c08a9f8a2b3df",
+          "source": "0f277d62bbbbada11cdd01f7255c6561",
+          "target": "ef03e0f7b90937a4415dc1726373b9cd",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "32.06"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-user-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "71a1aafe9508dd656366f88ff038c573",
+          "source": "0f277d62bbbbada11cdd01f7255c6561",
+          "target": "fa53e7923340b1c4530061b99ec77c10",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "7aae15393c5ceedffb5335817b5994d9",
+          "source": "1d10b2e3270c86474a7e8dec215c1f01",
+          "target": "4f6acfc3981387ccf2b652d86fb1de49",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "31.90"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-notification-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "c636880e6fac9d8bd9b48204f65cf71a",
+          "source": "1d10b2e3270c86474a7e8dec215c1f01",
+          "target": "f7a04777875a8dc0e6163859becbe575",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "0.27"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "rabbitmq.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "741eae58cccb82e18bde1b7b4e8a18ff",
+          "source": "227de096c29fc8804871bd2c3683ff25",
+          "target": "fc84122614eb779e1665b360572f5188",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "33.81"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-train-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8c674f43c494b6435ae56a9e19238b73",
+          "source": "23d5dc514240907a66f434d877a6b5c4",
+          "target": "227de096c29fc8804871bd2c3683ff25",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.002",
+              "httpPercentReq": "0.4"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-train-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "701cbdc2c3732a6fcac7416363bccbc7",
+          "source": "23d5dc514240907a66f434d877a6b5c4",
+          "target": "7cb800cd13d944db1c0ef67a028bd678",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "0.2"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-seat-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "3516b0849c40293eee20a4bea61ec989",
+          "source": "23d5dc514240907a66f434d877a6b5c4",
+          "target": "a2c3ec7506115bf0746be5b0608ad9c6",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "5.25"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-travel-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "2caf1a981a2909e61632ff4211f1522b",
+          "source": "23d5dc514240907a66f434d877a6b5c4",
+          "target": "d341f4127f0538a3a9ab4a3e5056559f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "63ceb2e44e76ce2997f477ae6c3d8767",
+          "source": "23d5dc514240907a66f434d877a6b5c4",
+          "target": "de544331c1987021fc7efe75ba08d102",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.15",
+              "httpPercentReq": "31.6"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-ticketinfo-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "aa40e7e0b2734be154212b453b46cfe2",
+          "source": "23d5dc514240907a66f434d877a6b5c4",
+          "target": "e68d54e77e5ea87707fbe8955b1642fb",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.32",
+              "http5xx": "0.008",
+              "httpPercentErr": "2.5",
+              "httpPercentReq": "67.7"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "97.2",
+                  "DC": "0.3"
+                },
+                "hosts": {
+                  "ts-route-service.default.svc.cluster.local": "97.5"
+                }
+              },
+              "500": {
+                "flags": {
+                  "-": "2.5"
+                },
+                "hosts": {
+                  "ts-route-service.default.svc.cluster.local": "2.5"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "43e8bb1d1498ec4466d8ac434e465cde",
+          "source": "375ab940b56ae7bcf0f89cb1a7af5d44",
+          "target": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "destPrincipal": "unknown",
+          "sourcePrincipal": "unknown",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "167.55",
+              "http3xx": "0.004",
+              "http4xx": "0.94",
+              "http5xx": "0.03",
+              "httpNoResponse": "0.08",
+              "httpPercentErr": "0.6",
+              "httpPercentReq": "100.0"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "DC": "0.0"
+                },
+                "hosts": {
+                  "ts-ui-dashboard.default.svc.cluster.local": "0.0"
+                }
+              },
+              "200": {
+                "flags": {
+                  "-": "99.4"
+                },
+                "hosts": {
+                  "ts-ui-dashboard.default.svc.cluster.local": "99.4"
+                }
+              },
+              "304": {
+                "flags": {
+                  "-": "0.0"
+                },
+                "hosts": {
+                  "ts-ui-dashboard.default.svc.cluster.local": "0.0"
+                }
+              },
+              "403": {
+                "flags": {
+                  "-": "0.5"
+                },
+                "hosts": {
+                  "ts-ui-dashboard.default.svc.cluster.local": "0.5"
+                }
+              },
+              "405": {
+                "flags": {
+                  "-": "0.0"
+                },
+                "hosts": {
+                  "ts-ui-dashboard.default.svc.cluster.local": "0.0"
+                }
+              },
+              "500": {
+                "flags": {
+                  "-": "0.0"
+                },
+                "hosts": {
+                  "ts-ui-dashboard.default.svc.cluster.local": "0.0"
+                }
+              },
+              "504": {
+                "flags": {
+                  "-": "0.0"
+                },
+                "hosts": {
+                  "ts-ui-dashboard.default.svc.cluster.local": "0.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "3118ca1209ff1945e923a5f339e4f8ce",
+          "source": "39e30ea4518ef6f87fcd412d349db896",
+          "target": "49840248b2789d310328f2cb26d49b4c",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "31.96"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-assurance-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "2d8bb5b1dca89127e8266a80f884be25",
+          "source": "503c651d1d44b01ddfa497e15fed3a2f",
+          "target": "23d5dc514240907a66f434d877a6b5c4",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8e86563242061a4f0726b9376a39f465",
+          "source": "503c651d1d44b01ddfa497e15fed3a2f",
+          "target": "eba8519df9e146c9d32b0b192cc40b3f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cee682ebbca1f700f4f6e72f7e413404",
+          "source": "5874dc18977426fd0fc0fd38f50b47d8",
+          "target": "62b428d99966df38c5cfce1ea1c733eb",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "32.14"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-contacts-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "67142a72a20061cd65a367a2658190ed",
+          "source": "6271ca56efa08bb4a6c8c5d6dfc7f8e4",
+          "target": "3b36502d3b8db50c7dbcc19f76b3c1a1",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "0.07"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-voucher-mysql.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "fca6706499a6e66c8e2b8f67a7dc04fb",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "0a30e14ca22faf3b9f35d16f1fd609a4",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.91",
+              "http4xx": "0.91",
+              "httpPercentErr": "100.0",
+              "httpPercentReq": "1.1"
+            },
+            "responses": {
+              "403": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-admin-user-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "3f9760dcfe16e9210e34d0f14b423d0e",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "0e0d7173b5b69d25887836c1d9856af3",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "42fa9a2195a72d60e1ffe33b8cdf9cd9",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "15e66fbd4451794e996912410a0c6c18",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "0ad3166b379f5595dca0cba34b680fbc",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "23d5dc514240907a66f434d877a6b5c4",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "81.69",
+              "http5xx": "0.005",
+              "httpNoResponse": "0.008",
+              "httpPercentErr": "0.0",
+              "httpPercentReq": "97.2"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "DC": "0.0"
+                },
+                "hosts": {
+                  "ts-travel-service.default.svc.cluster.local": "0.0"
+                }
+              },
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-travel-service.default.svc.cluster.local": "100.0"
+                }
+              },
+              "500": {
+                "flags": {
+                  "-": "0.0"
+                },
+                "hosts": {
+                  "ts-travel-service.default.svc.cluster.local": "0.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "3f6775ad172e270a530c5a871d5c8c44",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "39e30ea4518ef6f87fcd412d349db896",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "3207dbfc76ae9271a058f0a1339cc266",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "503c651d1d44b01ddfa497e15fed3a2f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "7f22b153e730db6e47a58df7024ea2af",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "5874dc18977426fd0fc0fd38f50b47d8",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8412bd24f933dfb8ef06d547131f8891",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "6271ca56efa08bb4a6c8c5d6dfc7f8e4",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "2ddc538ab39253faa2db04e77b27dc8c",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "6fca4dd5a75a664177a546824594aefd",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "0.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-order-other-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "d08196b345c1619da8fbe8121166bf4a",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "700c267246a25265ec0600955810af79",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "5543644311fbdbc50f1c5d5ecc4038e8",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "761bbb91a338d7d02e20c0e785c9b9c1",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "7c2785df5eb41484e668607c7ceef04d",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "81cf8fc2c58c842d4f8df4506bdfbcb6",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "0.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-verification-code-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "19e675dcf5e6a30a9327609863285ec0",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "964c1ff6b766610b13908c7218985f00",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "2ce921d1fe8b91694825198dd2187be5",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "99b85a7778afbbd5e61ebcef657c809a",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "bfa6d7eb65a29d0d00684ca7b22bd4dc",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "9c1320b20b8128d03100f168475aed12",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "04734e4c2d0bd740908f2eb1c4221449",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "aad4b01a57b21e2853419ab464f7f4bb",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "ada2161c60c498b40b345c2cd506a873",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "28501d51516d05ba2d81e05429aa19b2",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "d341f4127f0538a3a9ab4a3e5056559f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "0.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-order-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "7f02c2f899446221fafbdf099979b804",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "eba8519df9e146c9d32b0b192cc40b3f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.06",
+              "http5xx": "0.001",
+              "httpNoResponse": "0.002",
+              "httpPercentErr": "4.8",
+              "httpPercentReq": "0.1"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "DC": "3.2"
+                },
+                "hosts": {
+                  "ts-travel2-service.default.svc.cluster.local": "3.2"
+                }
+              },
+              "200": {
+                "flags": {
+                  "-": "95.2"
+                },
+                "hosts": {
+                  "ts-travel2-service.default.svc.cluster.local": "95.2"
+                }
+              },
+              "500": {
+                "flags": {
+                  "-": "1.6"
+                },
+                "hosts": {
+                  "ts-travel2-service.default.svc.cluster.local": "1.6"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "17b82cb50a4db7a5a3de341b63ceb607",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "fa0cbf9ace557f11dd2695f6e45b35b9",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "936c69367beef88689a03362097f53b9",
+          "source": "6c19a4b8f073cdbc9ad27e1d1978c5c9",
+          "target": "fa53e7923340b1c4530061b99ec77c10",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "1.38",
+              "httpNoResponse": "0.08",
+              "httpPercentErr": "5.7",
+              "httpPercentReq": "1.6"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "DC": "5.7"
+                },
+                "hosts": {
+                  "ts-auth-service.default.svc.cluster.local": "5.7"
+                }
+              },
+              "200": {
+                "flags": {
+                  "-": "94.3"
+                },
+                "hosts": {
+                  "ts-auth-service.default.svc.cluster.local": "94.3"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "274d49f45af11eee93919c14df07b25d",
+          "source": "6fca4dd5a75a664177a546824594aefd",
+          "target": "0d3996b2ffea01a6fbeefad4fba69c54",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "32.42"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-order-other-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "9ec2e90be3dc2df6fac75515e719b406",
+          "source": "6fca4dd5a75a664177a546824594aefd",
+          "target": "e5eb65b82546076c1416563bde52f001",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "100.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-station-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "fc9cf1060ed6fd4ad023e12bb2425504",
+          "source": "700c267246a25265ec0600955810af79",
+          "target": "5260b97ef48f332b908b91dbd2ddba7a",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "32.05"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-inside-payment-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "4895ba636e34815c1d544e9fc06d8050",
+          "source": "700c267246a25265ec0600955810af79",
+          "target": "a490693564e2097095997af388b0f181",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "7fc610d93395ad4e3129bef37a7d7c60",
+          "source": "700c267246a25265ec0600955810af79",
+          "target": "d341f4127f0538a3a9ab4a3e5056559f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "524dacf3d0dd15bdbbdfa76ef2ebea62",
+          "source": "761bbb91a338d7d02e20c0e785c9b9c1",
+          "target": "6fca4dd5a75a664177a546824594aefd",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "fd55ce7ade228969f9927adb71b99fed",
+          "source": "761bbb91a338d7d02e20c0e785c9b9c1",
+          "target": "d341f4127f0538a3a9ab4a3e5056559f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "d3738026dcfe99c8286684d672e03cdc",
+          "source": "7c306b518a5ebbacca25e9f72f66dd23",
+          "target": "3d17aed28f11b1ccfafc8b90b66cef3c",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "31.98"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-food-map-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "ddb924ac9175dd99911c6757381cc776",
+          "source": "7cb800cd13d944db1c0ef67a028bd678",
+          "target": "23d5dc514240907a66f434d877a6b5c4",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.003",
+              "httpPercentReq": "42.9"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-travel-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cbf52d305db00daf563ba94f76831fae",
+          "source": "7cb800cd13d944db1c0ef67a028bd678",
+          "target": "6fca4dd5a75a664177a546824594aefd",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "cebfe4b9e2dd3e5fffedf2bc212e64ac",
+          "source": "7cb800cd13d944db1c0ef67a028bd678",
+          "target": "a577267fa6f4c3fd5aa4e6092472ab37",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.002",
+              "httpPercentReq": "28.6"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-config-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "7be873ff1617535feb302bd22188f6cf",
+          "source": "7cb800cd13d944db1c0ef67a028bd678",
+          "target": "d341f4127f0538a3a9ab4a3e5056559f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "14.3"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-order-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "d768d9e436c9568c633dd870ce9f338d",
+          "source": "7cb800cd13d944db1c0ef67a028bd678",
+          "target": "eba8519df9e146c9d32b0b192cc40b3f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "14.3"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-travel2-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "48e23b69a2801e3c946f92060265f913",
+          "source": "8f4c8eed85068126c93b9db269dc42c1",
+          "target": "67b5b4f5e37cc99c27d67daa4c514150",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "31.99"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-security-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "4bfbd8a35df6a999bcae2f7c9cad4ced",
+          "source": "8f4c8eed85068126c93b9db269dc42c1",
+          "target": "6fca4dd5a75a664177a546824594aefd",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "fb1649a15ba9393252764f5584bda1b8",
+          "source": "8f4c8eed85068126c93b9db269dc42c1",
+          "target": "d341f4127f0538a3a9ab4a3e5056559f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "2af24297d995fdbc96a47d34582210d5",
+          "source": "928a35494f7fc2bb6d78da33e8609575",
+          "target": "668200154fbee1f886f7edc3b703eec2",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "31.97"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-consign-price-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "a20b3ada6857857094808fcbff2dca93",
+          "source": "964c1ff6b766610b13908c7218985f00",
+          "target": "7cb800cd13d944db1c0ef67a028bd678",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "50.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-seat-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "02758e34f7454653506a5e4f268cbc52",
+          "source": "964c1ff6b766610b13908c7218985f00",
+          "target": "de544331c1987021fc7efe75ba08d102",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "50.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-ticketinfo-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8024617cb86f0de938221d41331c63c3",
+          "source": "964c1ff6b766610b13908c7218985f00",
+          "target": "e5eb65b82546076c1416563bde52f001",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "6eb0fec7f1f02b87208e22030ccca66f",
+          "source": "964c1ff6b766610b13908c7218985f00",
+          "target": "f64b21b92cee38211b7b23cb08110f33",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "127f4e57aa20830f4a262ae62f2e392d",
+          "source": "99b85a7778afbbd5e61ebcef657c809a",
+          "target": "23d5dc514240907a66f434d877a6b5c4",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "719133f2e561629ca9000868da5ea727",
+          "source": "99b85a7778afbbd5e61ebcef657c809a",
+          "target": "7c306b518a5ebbacca25e9f72f66dd23",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8c74e6921a431aeb9e4719ef489048d9",
+          "source": "99b85a7778afbbd5e61ebcef657c809a",
+          "target": "e429b8d268ea624c9d834e8325921655",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "31.97"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-food-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "e749593143cb5c3f38203cd93a08b0b2",
+          "source": "99b85a7778afbbd5e61ebcef657c809a",
+          "target": "e5eb65b82546076c1416563bde52f001",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "baf2fa0617a62eec3ca93793aaa60533",
+          "source": "99b85a7778afbbd5e61ebcef657c809a",
+          "target": "f7a04777875a8dc0e6163859becbe575",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "0.003"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "rabbitmq.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "1418089dd35df4391f27911f1a0b788b",
+          "source": "9c1320b20b8128d03100f168475aed12",
+          "target": "d341f4127f0538a3a9ab4a3e5056559f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8792588f9a25e4b6e7348ebb8c07d4ea",
+          "source": "9fc02e97b2bbcfe280bfad2659afc230",
+          "target": "227de096c29fc8804871bd2c3683ff25",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "0.4"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-train-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8e2eac0f0ea5aa6860d728f754ed536d",
+          "source": "9fc02e97b2bbcfe280bfad2659afc230",
+          "target": "e5eb65b82546076c1416563bde52f001",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.28",
+              "httpPercentReq": "98.9"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-station-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "bdc63a6875a4f6f587d3f7e3162a16ed",
+          "source": "9fc02e97b2bbcfe280bfad2659afc230",
+          "target": "e68d54e77e5ea87707fbe8955b1642fb",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "0.4"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-route-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "be01c9a60e192520d2040df7076a8634",
+          "source": "9fc02e97b2bbcfe280bfad2659afc230",
+          "target": "fd447fc0d44050a4bc978641ed25e6f0",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "0.4"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-price-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "0074a37d7913b47487e93667a88be52c",
+          "source": "a490693564e2097095997af388b0f181",
+          "target": "757a94fcfc0626245f273a2709a93c09",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "31.99"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-payment-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "46d8b8394d39971e258b92c1fa9b11ae",
+          "source": "a577267fa6f4c3fd5aa4e6092472ab37",
+          "target": "c428a13969084a16e4595831efa9ae18",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "32.51"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-config-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8051d7c6429fc9ac0b607bebd8f32f7b",
+          "source": "aad4b01a57b21e2853419ab464f7f4bb",
+          "target": "e68d54e77e5ea87707fbe8955b1642fb",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "bdc13906f3d7bc83f9f1e40b1f9f5e98",
+          "source": "bd36d4c855abb161643a3d6f1318b36b",
+          "target": "419ad243068e1d437886b37764b8a56a",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "31.97"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-delivery-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "750ef4839976a398d1f6027696927c89",
+          "source": "bd36d4c855abb161643a3d6f1318b36b",
+          "target": "f7a04777875a8dc0e6163859becbe575",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "0.28"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "rabbitmq.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "591766257b3aa82908f3396d41ea8219",
+          "source": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "target": "0f277d62bbbbada11cdd01f7255c6561",
+          "destPrincipal": "unknown",
+          "sourcePrincipal": "unknown",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "eff1a09b2cb0413da0c1bc4390bca158",
+          "source": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "target": "23d5dc514240907a66f434d877a6b5c4",
+          "destPrincipal": "unknown",
+          "sourcePrincipal": "unknown",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "06ce5766f4a1e97fbdc63aeb07da4f7c",
+          "source": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "target": "5874dc18977426fd0fc0fd38f50b47d8",
+          "destPrincipal": "unknown",
+          "sourcePrincipal": "unknown",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "66ec68e907e8ee5cbda6710568630a60",
+          "source": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "target": "7cb800cd13d944db1c0ef67a028bd678",
+          "destPrincipal": "unknown",
+          "sourcePrincipal": "unknown",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "ec04716a03d0f9c76d9482d98e9f3a14",
+          "source": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "target": "8f4c8eed85068126c93b9db269dc42c1",
+          "destPrincipal": "unknown",
+          "sourcePrincipal": "unknown",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "657bf03191fbafacaab18c327ebdb2f5",
+          "source": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "target": "99b85a7778afbbd5e61ebcef657c809a",
+          "destPrincipal": "unknown",
+          "sourcePrincipal": "unknown",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "4d172648e8daccfbce14606db8589e40",
+          "source": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "target": "d341f4127f0538a3a9ab4a3e5056559f",
+          "destPrincipal": "unknown",
+          "sourcePrincipal": "unknown",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "1e572bc55cec32c591ac1a1943827387",
+          "source": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "target": "de544331c1987021fc7efe75ba08d102",
+          "destPrincipal": "unknown",
+          "sourcePrincipal": "unknown",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "e4ba34a00824d827332fb3ba163c4913",
+          "source": "ce13ccdaf6852a9cdfc5a6ccf23e56f6",
+          "target": "e5eb65b82546076c1416563bde52f001",
+          "destPrincipal": "unknown",
+          "sourcePrincipal": "unknown",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "12b7176d2c7a36ee3303ad94a7685725",
+          "source": "d341f4127f0538a3a9ab4a3e5056559f",
+          "target": "46cc5ade0673b5a4f36031293354261a",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "34.53"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-order-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "11644ab0b08093384c776a4fa6cdd462",
+          "source": "d341f4127f0538a3a9ab4a3e5056559f",
+          "target": "e5eb65b82546076c1416563bde52f001",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "100.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-station-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "c294ee62f90d5143276ccfc31aeb2bf8",
+          "source": "de544331c1987021fc7efe75ba08d102",
+          "target": "9fc02e97b2bbcfe280bfad2659afc230",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.28",
+              "httpPercentReq": "100.0"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "99.6",
+                  "DC": "0.4"
+                },
+                "hosts": {
+                  "ts-basic-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "70e2f1abbad24c74906af6288e85b96a",
+          "source": "e5eb65b82546076c1416563bde52f001",
+          "target": "279a4f095b708e0221f56f41fa563202",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "96.96"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-station-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "ffa634ca131f3b19caaa6129e8f9823e",
+          "source": "e68d54e77e5ea87707fbe8955b1642fb",
+          "target": "e68da96564b43fe27b6f06683bbd0ba5",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "0.30"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-route-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "a4c3d7b270ac86bafce72ef53d063601",
+          "source": "eba8519df9e146c9d32b0b192cc40b3f",
+          "target": "227de096c29fc8804871bd2c3683ff25",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.001",
+              "httpPercentReq": "0.2"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-train-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "bafa019b3f37996372973786cacadf8f",
+          "source": "eba8519df9e146c9d32b0b192cc40b3f",
+          "target": "68df13fbf8ceb6ac374cda9dd7f23594",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "0.57"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-travel2-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "4f00b3f513443f648de04eb908af6acf",
+          "source": "eba8519df9e146c9d32b0b192cc40b3f",
+          "target": "6fca4dd5a75a664177a546824594aefd",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "ee765dbd07cc7f5b0648b860ef92575c",
+          "source": "eba8519df9e146c9d32b0b192cc40b3f",
+          "target": "7cb800cd13d944db1c0ef67a028bd678",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "5a7f4ddc6d6e03e1340ebedd45f0a19b",
+          "source": "eba8519df9e146c9d32b0b192cc40b3f",
+          "target": "de544331c1987021fc7efe75ba08d102",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.12",
+              "httpPercentReq": "30.9"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-ticketinfo-service.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "8692207dec41ceeb8ba4efc5c5cf66e7",
+          "source": "eba8519df9e146c9d32b0b192cc40b3f",
+          "target": "e68d54e77e5ea87707fbe8955b1642fb",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http",
+            "rates": {
+              "http": "0.28",
+              "http5xx": "0.001",
+              "httpPercentErr": "0.4",
+              "httpPercentReq": "68.9"
+            },
+            "responses": {
+              "200": {
+                "flags": {
+                  "-": "99.3",
+                  "DC": "0.4"
+                },
+                "hosts": {
+                  "ts-route-service.default.svc.cluster.local": "99.6"
+                }
+              },
+              "500": {
+                "flags": {
+                  "-": "0.4"
+                },
+                "hosts": {
+                  "ts-route-service.default.svc.cluster.local": "0.4"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "9b38a1969f777e8b11e2937f55169f02",
+          "source": "f64b21b92cee38211b7b23cb08110f33",
+          "target": "23d5dc514240907a66f434d877a6b5c4",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "841a4c096d51f7e0bf3bf1c47d563e5a",
+          "source": "f64b21b92cee38211b7b23cb08110f33",
+          "target": "e5eb65b82546076c1416563bde52f001",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "e729e19c67c591ad06b79f83a68b5c52",
+          "source": "f64b21b92cee38211b7b23cb08110f33",
+          "target": "e68d54e77e5ea87707fbe8955b1642fb",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "1ecfeb4d595f8ab62641a6bacb73f725",
+          "source": "f64b21b92cee38211b7b23cb08110f33",
+          "target": "eba8519df9e146c9d32b0b192cc40b3f",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "108cd952317ea95806bf172be97d040c",
+          "source": "fa0cbf9ace557f11dd2695f6e45b35b9",
+          "target": "227de096c29fc8804871bd2c3683ff25",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "3112a549588efc988132ba977601f9e6",
+          "source": "fa0cbf9ace557f11dd2695f6e45b35b9",
+          "target": "e5eb65b82546076c1416563bde52f001",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "d21dbc6df9b442bf53f8ab14a9f90260",
+          "source": "fa0cbf9ace557f11dd2695f6e45b35b9",
+          "target": "fd447fc0d44050a4bc978641ed25e6f0",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "0963371c50bdd7b45adadcd2dafdcaed",
+          "source": "fa53e7923340b1c4530061b99ec77c10",
+          "target": "81cf8fc2c58c842d4f8df4506bdfbcb6",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "http"
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "6540ddde2b63d8d8f4280a1a7bf56a78",
+          "source": "fa53e7923340b1c4530061b99ec77c10",
+          "target": "86fc71732421bf53c6df3b2f6e01c739",
+          "destPrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "isMTLS": "100",
+          "sourcePrincipal": "spiffe://cluster.local/ns/default/sa/default",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "0.63"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-auth-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "data": {
+          "id": "d56514aa3642160f3712d02dc7c9a346",
+          "source": "fd447fc0d44050a4bc978641ed25e6f0",
+          "target": "2b0eec7414c3cc829471d696cb9bccc9",
+          "traffic": {
+            "protocol": "tcp",
+            "rates": {
+              "tcp": "32.44"
+            },
+            "responses": {
+              "-": {
+                "flags": {
+                  "-": "100.0"
+                },
+                "hosts": {
+                  "ts-price-mongo.default.svc.cluster.local": "100.0"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
